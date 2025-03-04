@@ -1,0 +1,83 @@
+Create a DOS Batch file to create this directory structure in Windows 11:
+## Project Structure
+
+angular-calculator/
+
+├── backend/              # Simple Express.js server
+
+│   ├── server.js         # Backend calculation logic
+
+│   └── package.json      # Backend dependencies
+
+└── frontend/             # Angular application
+
+    ├── src/
+
+    │   ├── app/
+
+    │   │   ├── components/
+
+    │   │   │   └── calculator/  # Calculator component
+
+    │   │   ├── services/
+
+    │   │   │   └── calculation.service.ts  # Service for API calls
+
+    │   │   ├── models/
+
+    │   │   │   └── calculation.model.ts    # Data model
+
+    │   │   └── app.component.*  # Root component files
+
+    │   ├── index.html
+
+    │   └── styles.css    # Global styles
+
+    └── package.json      # Frontend dependencies
+
+DOS Batch script to create the requested directory structure in Windows 11. 
+  The script will generate the necessary folders and create placeholder files where specified.
+
+Batch Script: setup_project.bat
+
+@echo off
+SET "ROOT_DIR=angular-calculator"
+
+:: Create project root directory
+mkdir "%ROOT_DIR%"
+
+:: Create backend structure
+mkdir "%ROOT_DIR%\backend"
+echo // Express.js backend logic > "%ROOT_DIR%\backend\server.js"
+echo { } > "%ROOT_DIR%\backend\package.json"
+
+:: Create frontend structure
+mkdir "%ROOT_DIR%\frontend"
+mkdir "%ROOT_DIR%\frontend\src"
+mkdir "%ROOT_DIR%\frontend\src\app"
+mkdir "%ROOT_DIR%\frontend\src\app\components"
+mkdir "%ROOT_DIR%\frontend\src\app\components\calculator"
+mkdir "%ROOT_DIR%\frontend\src\app\services"
+mkdir "%ROOT_DIR%\frontend\src\app\models"
+
+:: Create frontend files
+echo // Calculation component > "%ROOT_DIR%\frontend\src\app\components\calculator\calculator.component.ts"
+echo // API service > "%ROOT_DIR%\frontend\src\app\services\calculation.service.ts"
+echo // Data model > "%ROOT_DIR%\frontend\src\app\models\calculation.model.ts"
+echo // Root component files > "%ROOT_DIR%\frontend\src\app\app.component.ts"
+echo // Angular index.html > "%ROOT_DIR%\frontend\src\index.html"
+echo /* Global styles */ > "%ROOT_DIR%\frontend\src\styles.css"
+echo { } > "%ROOT_DIR%\frontend\package.json"
+
+echo Project structure successfully created.
+
+  Execution Instructions
+Save the script as setup_project.bat.
+Open Command Prompt (cmd) as Administrator (if necessary).
+Navigate to the directory where you saved the script.
+Run the script by typing:
+
+Run this file at the command line:  setup_project.bat
+The directory structure will be created, along with placeholder files.
+Logical and efficient, this script allows rapid deployment of the development environment. 
+  
