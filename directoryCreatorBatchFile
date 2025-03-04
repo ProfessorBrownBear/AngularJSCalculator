@@ -1,7 +1,22 @@
+How to use this:
+Use SUBLIME text editor to create this batch file:
+We will make a Batch file to run at the command prompt of our Operating System!  Pretty Cool!
+
 Create a DOS Batch file to create this directory structure in Windows 11:
+C:\Users\peter>cd \
+
+C:\>cd \
+
+C:\>mkdir angular-calculator
+
+C:\>cd angular-calculator
+
+C:\angular-calculator>
+
+
 ## Project Structure
 
-angular-calculator/
+angular-calculator/      Note: this is the name of our project directory: Use mkdir angular-calculator
 
 ├── backend/              # Simple Express.js server
 
@@ -39,6 +54,7 @@ DOS Batch script to create the requested directory structure in Windows 11.
   The script will generate the necessary folders and create placeholder files where specified.
 
 Batch Script: setup_project.bat
+Let's start by making a project directory for our Angular App, and save the file there:
 
 @echo off
 SET "ROOT_DIR=angular-calculator"
